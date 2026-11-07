@@ -1,32 +1,24 @@
-# React + TypeScript + Vite
+# React Canvas Analytics & Debug Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## 📝 Project Overview
+A highly interactive, frontend-only Single Page Application (SPA) built as a working reference implementation for an AI training assessment. The project demonstrates advanced UI design, raw HTML5 Canvas rendering, and an integrated state-debugging console.
 
-Currently, two official plugins are available:
+## 🛠️ Technology Stack
+*   **Framework:** React 18
+*   **Language:** TypeScript (Strictly typed interfaces and state)
+*   **Graphics:** HTML5 `<canvas>` API (Raw Canvas drawing, gradients, and animations without external charting libraries)
+*   **Styling:** Inline React Styles & CSS3
+*   **Tooling:** Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎯 Objective Success Criteria
+1.  **Canvas Graphics:** Implement a custom network traffic graph using raw `getContext('2d')` to draw grid lines, gradient fills, and data points.
+2.  **Responsive Layout:** The Canvas must dynamically resize using `ResizeObserver` based on the parent container's width, preventing horizontal overflow.
+3.  **TypeScript Integrity:** All React components, props, and state must be typed to prevent runtime errors.
+4.  **Interactive Debugging:** Implement a slide-out "Debug Console" that logs user interactions (tab navigation, toggling the console) in real-time to simulate production error tracking.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 🚀 How to Run Locally
+1. Clone the repo: `git clone https://github.com/Adijah6838/react-canvas-dashboard.git`
+2. Navigate into the folder: `cd react-canvas-dashboard`
+3. Install dependencies: `npm install`
+4. Run the development server: `npm run dev`
+5. Open `http://localhost:5173` in your browser.
